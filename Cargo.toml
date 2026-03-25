@@ -1,0 +1,10 @@
+[package]
+name = "pqutil"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+parquet = { version = "55", features = ["arrow"] }
+arrow = { version = "55", features = ["prettyprint", "chrono-tz"] }
